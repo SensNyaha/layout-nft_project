@@ -1,0 +1,93 @@
+.exclusive {
+    position: relative;
+    margin-top: 250px;
+    background: $secondBgColor;
+    z-index: 0;
+    &:before {
+        content: '';
+        width: 100%;
+        min-height: 150px;
+        z-index: -5;
+        position: absolute;
+        left: 0;
+        top: -150px;
+        background: url('../../img/yellow_wave.png') no-repeat center / cover;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        min-height: 137px;
+        z-index: -5;
+        position: absolute;
+        left: 0;
+        bottom: -137px;
+        background: url('../../img/yellow_wave.png') no-repeat center / cover;
+        transform: rotateZ(180deg);
+    }
+    &__title {
+        margin-top: 4px;
+        text-align: left;
+        &-mini {
+            @include titleMini(orange);
+            margin: 0;
+        }
+    }
+    &__item {
+        min-height: 500px;
+        padding-top: 141px;
+        padding-bottom: 141px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100vw;
+            height: 1px;
+            background: rgba(64, 71, 86, 0.6);
+            top: 68px;
+            left: 0;
+        }
+        &:last-child:after {
+            content: '';
+            position: absolute;
+            width: 100vw;
+            height: 1px;
+            background: rgba(64, 71, 86, 0.6);
+            bottom: 68px;
+            left: 0;
+        }
+        &-text {
+            width: 340px;
+        }
+        &-level {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 32px;
+            color: $fontColor;
+        }
+        &-visual {
+            margin-top: 31px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: $fontColor;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-markers {
+            margin-left: 32px;
+        }
+        &-descr {
+            margin-top: 28px;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $secFontColor;
+        }
+    }
+}

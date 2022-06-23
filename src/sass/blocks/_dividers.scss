@@ -1,0 +1,12 @@
+.divider {
+    background: rgba(64, 71, 86, 0.6);
+    height: 1px;
+    width: 100vw;
+    &_long {
+        background: rgba(64, 71, 86, 0.6);
+        height: 1px;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+    }
+}

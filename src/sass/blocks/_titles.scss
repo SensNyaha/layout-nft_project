@@ -1,0 +1,10 @@
+.title {
+    &_big {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 58px;
+        text-align: center;
+        color: $fontColor;
+    }
+}

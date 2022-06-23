@@ -1,0 +1,46 @@
+.promo {
+    position: relative;
+    padding-top: 115px;
+    &__bg {
+        &-left {
+            position: absolute;
+            left: -39px;
+            top: 21px;
+            z-index: -1;
+        }
+        &-right {
+            position: absolute;
+            right: 70px;
+            top: 21px;
+            z-index: -1;
+        }
+    }
+    &__text {
+        margin: 0 auto;
+        width: 560px;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 97px;
+        line-height: 87px;
+        text-align: center;
+        color: $fontColor;
+        &_mini {
+            @include titleMini (yellow)
+        }
+    }
+    &__descr {
+        width: 430px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $secFontColor;
+        margin: 45px auto 0;
+    }
+    &__btn {
+        margin-top: 29px;   
+    }
+}

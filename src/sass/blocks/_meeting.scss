@@ -1,0 +1,47 @@
+.meeting {
+    margin-top: 395px; 
+    &__title {
+        margin-top: 6px;
+        &_mini {
+            @include titleMini();
+        }
+    }
+    &__wrapper {
+        margin-top: 92px;
+        display: grid;
+        grid-template-columns: 400px 605px;
+        grid-template-rows: repeat (3, minmax(200px, auto));
+        grid-auto-rows: minmax(200px, auto);
+        column-gap: 80px;
+    }
+    &__item {
+        border-bottom: 1px solid rgba(64, 71, 86, 0.6);
+        padding: 27px 43px 32px 0;
+        &:nth-child(3n) {
+            border-bottom: none;
+        }
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 22px;
+            color: $fontColor;
+        }
+        &-descr {
+            margin-top: 17px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $secFontColor;
+        }
+    }
+    &__img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        position: relative;
+        img {
+            position: absolute;
+            right: -92px;
+        }
+    }
+    
+}

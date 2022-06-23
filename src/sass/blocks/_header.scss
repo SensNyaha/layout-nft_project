@@ -1,0 +1,22 @@
+.header {
+    padding: 28px 67px 0;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        position: relative;
+        width: 59px;
+        height: 59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    &__img {
+        z-index: 1;
+    }
+}
