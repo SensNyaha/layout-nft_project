@@ -11,7 +11,7 @@
         position: absolute;
         left: 0;
         top: -150px;
-        background: url('../../img/yellow_wave.png') no-repeat center / cover;
+        background: url('../img/yellow_wave.png') no-repeat center / cover;
     }
     &:after {
         content: '';
@@ -21,7 +21,7 @@
         position: absolute;
         left: 0;
         bottom: -137px;
-        background: url('../../img/yellow_wave.png') no-repeat center / cover;
+        background: url('../img/yellow_wave.png') no-repeat center / cover;
         transform: rotateZ(180deg);
     }
     &__title {
