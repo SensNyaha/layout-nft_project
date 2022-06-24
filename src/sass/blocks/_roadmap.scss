@@ -1,0 +1,125 @@
+.roadmap {
+    margin-top: 300px;
+    &__title {
+        margin-top: 4px;
+        &-mini {
+            @include titleMini(pink);
+            text-align: center;
+        }
+    }
+    &__wrapper {
+        margin-top: 105px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 475px);
+        grid-auto-rows: 475px;
+        row-gap: 108px;
+    }
+    &__level {
+        display: grid;
+        grid-template-columns: 75px 530px;
+        column-gap: 150px;
+        &_traced {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 183px;
+                height: 138px;
+                z-index: 1;
+                left: 655px;
+                top: -8px;
+                background: url(../img/traces_textarea.svg) no-repeat center / cover;
+            }
+        }
+        &_girl {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 186px;
+                height: 424px;
+                z-index: 1;
+                left: 853px;
+                top: 0px;
+                background: url(../img/girl.svg) no-repeat center / cover;
+            }
+        }
+        &_sittinggirl {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 230px;
+                height: 436px;
+                z-index: 1;
+                left: 853px;
+                top: 52px;
+                background: url(../img/sitting_girl.svg) no-repeat center / cover;
+            }
+        }
+        &_twoguys {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 297px;
+                height: 427px;
+                z-index: 1;
+                left: 853px;
+                top: 20px;
+                background: url(../img/two_guys.svg) no-repeat center / cover;
+            }
+        }
+        &-status {
+            font-family: 'Montserrat';
+            font-size: 18px;
+            line-height: 16px;
+            color: $lightRed;
+            position: relative;
+            padding-left: 44px;
+            margin-top: 122px;
+            &:before {
+                position: absolute;
+                z-index: -1;
+                top: -10px;
+                left: 0;
+                content: '';
+                width: 33px;
+                height: 36px;
+                background: url(../img/marker_pink.svg) no-repeat center / cover;
+            }
+        }
+        &-descr {
+            background: url(../img/textarea.svg) no-repeat center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-subtitle {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: $fontColor;
+            width: 325px;
+        }
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 32px;
+            color: $fontColor;
+            width: 325px;
+            margin-top: 9px;
+        }
+        &-text {
+            width: 325px;
+            margin-top: 23px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $secFontColor;
+        }
+    }
+}

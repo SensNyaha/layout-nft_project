@@ -11,7 +11,7 @@
     font-weight: 400;
 }
 body {
-    background-color: rgba(229, 229, 229, 0.3);
+    background-color: rgba(229, 229, 229, 0.144);
 }
 
 .container {
@@ -27,5 +27,9 @@ body {
 @import 'blocks/promo';
 @import 'blocks/meeting';
 @import 'blocks/exclusive';
+@import 'blocks/roadmap';
+@import 'blocks/team';
+@import 'blocks/faq';
+@import 'blocks/footer';
 
 

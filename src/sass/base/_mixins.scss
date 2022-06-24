@@ -5,10 +5,10 @@
         height: 35px;
         display: block;
         position: absolute;
-        top: -12px;
+        bottom: 2px;
         left: -17px;
         z-index: -1;
-        background: url(../img/marker_#{$color}.svg) no-repeat;
+        background: url(../img/marker_#{$color}.svg) no-repeat center / contain;
     }
 }
 
@@ -21,4 +21,71 @@
     color: $fontColor;
     width: fit-content;
     @include marker($color);
+}
+
+@mixin topWaveBorder ($color: yellow) {
+    position: relative;
+    &:before {
+        content: '';
+        width: 100%;
+        min-height: 150px;
+        z-index: -5;
+        position: absolute;
+        left: 0;
+        top: -150px;
+        background: url('../img/#{$color}_wave.png') no-repeat center / cover;
+    }
+
+}
+@mixin bottomWaveBorder($color: yellow) {
+    position: relative;
+    &:after {
+        content: '';
+        width: 100%;
+        min-height: 137px;
+        z-index: -5;
+        position: absolute;
+        left: 0;
+        bottom: -135px;
+        background: url('../img/#{$color}_wave.png') no-repeat center / cover;
+        transform: rotateZ(180deg);
+    }
+}
+
+@mixin accordeonPlus {
+    position: relative;
+    cursor: pointer;
+    &:before {
+        width: 17px;
+        height: 3px;
+        content: '';
+        background-color: $secFontColor;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        transition: all .5s;
+    }
+    &:after {
+        width: 3px;
+        height: 17px;
+        content: '';
+        background-color: $secFontColor;
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .5s;
+    }
+
+    
+    &_active {
+        &:after {
+            transform: rotate(90deg) translateX(-7px);
+        }
+        &:before {
+            opacity: 0;
+        }
+    }
 }
