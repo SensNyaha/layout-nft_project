@@ -1,0 +1,233 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 960px
+    }
+    .promo {
+        &__bg {
+            &-left {
+                height: 110%;
+            }
+            &-right {
+                height: 90%;
+            }
+        }
+    }
+    .meeting {
+        margin-top: 190px;
+        &__wrapper {
+            margin-top: 70px;
+            column-gap: 60px;
+            grid-template-columns: 350px 550px;
+        }
+        &__item {
+            padding-right: 20px;
+        }
+    }
+    .title{
+        &_big {
+            font-size: 48px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px
+    }
+    .promo {
+        padding-top: 90px;
+        &__bg {
+            &-left {
+                height: 90%;
+                top: 50px;
+            }
+            &-right {
+                height: 80%;
+                top: 50px;
+                right: -10px;
+            }
+        }
+        &__title {
+            font-size: 70px;
+            line-height: 65px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 20px;
+            width: 400px;
+        }
+    }
+    .header {
+        &__hamburger {
+            display: flex;
+        }
+    }
+    .menu {
+        position: fixed;
+        font-size: 22px;
+        flex-direction: column;
+        background-color: $menuBgColor;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 2;
+        padding-top: 100px;
+        &:before {
+            content: '';
+            position: fixed;
+            width: calc(100% - 250px);
+            height: 100vh;
+            right: -100%;
+            top: 0;
+            z-index: 2;
+            background-color:rgba(128, 128, 128, 0.233);
+            transition: all 0.5s;
+        }
+        &_active {
+            left: 0%;
+            &:before {
+                right: 0;
+            }
+        }
+    }
+    .meeting {
+        margin-top: 130px;
+        &__wrapper {
+            margin-top: 70px;
+            column-gap: 0;
+            grid-template-columns: 250px 450px;
+            grid-template-rows: repeat(3,minmax(120px,auto));
+        }
+        &__item {
+            padding: 12px 15px 12px 0;
+            &-title {
+                font-size: 20px;
+                line-height: 18px;
+            }
+            &-descr {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .title{
+        &_big {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px
+    }
+    .promo {
+        padding-top: 50px;
+        &__bg {
+            &-left {
+                height: 90%;
+                left: 5px
+            }
+            &-right {
+                height: 80%;
+            }
+        }
+        &__text {
+            width: 520px;
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 45px;
+            &_mini {
+                font-size: 16px;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 16px;
+            width: 250px;
+            margin-top: 20px;
+        }
+    }
+    .meeting {
+        margin-top: 100px;
+        &__wrapper {
+            margin-top: 50px;
+            column-gap: 0;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3,minmax(120px,auto));
+        }
+        &__img {
+            grid-column: unset;
+            grid-row: unset;
+        }
+        &__item {
+            padding: 12px 15px 12px 0;
+            &-title {
+                font-size: 20px;
+                line-height: 18px;
+            }
+            &-descr {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .title{
+        &_big {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        padding-top: 20px;
+        &__text {
+            width: 100%;
+        }
+        &__bg {
+            &-left {
+                height: 80%;
+                top: 200px;
+                left: -5px;
+            }
+            &-right {
+                height: 70%;
+                top: 210px;
+            }
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 38px;
+            &_mini {
+                font-size: 10px;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 16px;
+            width: 80%;
+        }
+    }
+    .header {
+        margin: 0 10px;
+    }
+    .btn {
+        height: 35px;
+        padding: 4px 20px;
+        font-size: 15px;
+    }
+    .menu {
+        width: 100%;
+        &:before {
+            width: 0;
+        }
+    }
+}

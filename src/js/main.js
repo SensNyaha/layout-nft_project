@@ -11,9 +11,21 @@ faqQuestions.forEach(item => {
 document.querySelectorAll('.menu a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (e.target.closest('.menu').classList.contains('menu_active')) {
+            e.target.closest('.menu').classList.remove('menu_active');
+            setTimeout(() => {e.target.click(); console.log(1)}, 200);
+        }
+        else {
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
+
+let hamburger = document.querySelector('.header__hamburger');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    hamburger.previousSibling.classList.toggle('menu_active');
+    hamburger.closest('body').classList.toggle('overflowed');
+})

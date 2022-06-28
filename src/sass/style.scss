@@ -10,8 +10,18 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }
+
 body {
     background-color: rgba(229, 229, 229, 0.144);
+    overflow: auto; 
+    &.overflowed {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -31,5 +41,6 @@ body {
 @import 'blocks/team';
 @import 'blocks/faq';
 @import 'blocks/footer';
+@import 'blocks/media';
 
 

@@ -10,7 +10,7 @@
         margin-top: 92px;
         display: grid;
         grid-template-columns: 400px 605px;
-        grid-template-rows: repeat (3, minmax(200px, auto));
+        grid-template-rows: repeat(3, minmax(200px, auto));
         grid-auto-rows: minmax(200px, auto);
         column-gap: 80px;
     }
@@ -38,10 +38,7 @@
         grid-column: 2/3;
         grid-row: 1/4;
         position: relative;
-        img {
-            position: absolute;
-            right: -92px;
-        }
+        background: url('../img/meeting_people.svg') no-repeat 10px -10px / cover;
     }
     
 }
