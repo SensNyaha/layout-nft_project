@@ -40,6 +40,30 @@
             }
         }
     }
+    .roadmap {
+        margin-top: 220px;
+        &__wrapper {
+            margin-top: 70px;
+            row-gap: 80px;
+        }
+        &__level{
+            &_girl {
+                &:before {
+                    left: 720px;
+                }
+            }
+            &_sittinggirl {
+                &:before {
+                    left: 720px;
+                }
+            }
+            &_twoguys {
+                &:before {
+                    left: 670px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -153,6 +177,47 @@
                 img {
                     width: 100%;
                     display: inline-block;
+                }
+            }
+        }
+    }
+    .roadmap {
+        margin-top: 180px;
+        &__title {
+
+            &_mini {
+                font-size: 16px;
+            }
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__level {
+            column-gap: 50px;
+            &_traced {
+                &:before {
+                    left: 510px;
+                }
+            }
+            &_girl {
+                &:before {
+                    left: 570px;
+                    width: 128px;
+                    background-size: contain
+                }
+            }
+            &_sittinggirl {
+                &:before {
+                    left: 580px;
+                    width: 150px;
+                    background-size: contain
+                }
+            }
+            &_twoguys {
+                &:before {
+                    left: 560px;
+                    width: 180px;
+                    background-size: contain
                 }
             }
         }
