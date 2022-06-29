@@ -1,6 +1,7 @@
 .promo {
     position: relative;
     padding-top: 115px;
+    overflow-x: clip;
     &__bg {
         &-left {
             position: absolute;

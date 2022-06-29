@@ -10,19 +10,19 @@
     &__title {
         margin-top: 4px;
         text-align: left;
-        &-mini {
+        &_mini {
             @include titleMini(orange);
             margin: 0;
 
         }
     }
     &__item {
-        min-height: 500px;
         padding-top: 141px;
         padding-bottom: 141px;
         position: relative;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &:before {
             content: '';
             position: absolute;

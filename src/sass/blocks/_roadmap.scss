@@ -2,7 +2,7 @@
     margin-top: 300px;
     &__title {
         margin-top: 4px;
-        &-mini {
+        &_mini {
             @include titleMini(pink);
             text-align: center;
         }

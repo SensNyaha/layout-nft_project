@@ -12,7 +12,7 @@
             top: -100px;
             background: url(../img/traces_questions.svg) no-repeat center / contain;
         }
-        &-mini {
+        &_mini {
             @include titleMini(blue)
         }
     }
