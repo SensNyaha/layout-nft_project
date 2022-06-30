@@ -8,7 +8,7 @@
     @include bottomWaveBorder();
 
     &__title {
-        margin-top: 4px;
+        margin-top: 6px;
         text-align: left;
         &_mini {
             @include titleMini(orange);

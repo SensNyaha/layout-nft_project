@@ -327,6 +327,58 @@
             }
         }
     }
+    .roadmap {
+        &__title {
+            &_mini {
+                font-size: 14px;
+            }
+        }
+        &__wrapper {
+            margin-top: 40px;
+            row-gap: 40px;
+            grid-template-rows: repeat(6,400px);;
+            grid-auto-rows: 400px;
+        }
+        &__level {
+            grid-template-columns: 75px 430px;
+            column-gap: 20px;
+            &::before {
+                width: 130px;
+                height: 90px;
+                background-size: contain;
+                background-position: 50%;
+                left: 400px;
+                top: 20px;
+            }
+            &-status {
+                margin-top: 90px;
+            }
+            &-descr {
+                background-size: contain;
+                background-position: 50%;
+            }
+            &-subtitle {
+                font-size: 16px;
+                width: 285px;
+            }
+            &-title {
+                font-size: 26px;
+                width: 285px;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 22px;
+                width: 285px;
+            }
+            &_girl, &_sittinggirl, &_twoguys {
+                &:before {
+                    width: 140px;
+                    height: 140px;
+                }
+
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -450,6 +502,47 @@
             }
             &:last-child::after{
                 bottom: -20px;
+            }
+        }
+    }
+    .roadmap {
+        margin-top: 100px;
+        &__title {
+            &_mini {
+                font-size: 12px;
+            }
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-rows: repeat(6,350px);
+            grid-auto-rows: 350px;
+            row-gap: 0;
+        }
+        &__level {
+            grid-template-columns: 1fr;
+            &-status {
+                display: none;
+            }
+            &:before {
+                left: 190px;
+            }
+            &-subtitle {
+                text-align: center;
+            }
+            &-title {
+                text-align: center;
+            }
+            &-text {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 20px;
+                width: auto;
+                padding: 0 30px 0 30px;
+            }
+            &_girl, &_sittinggirl, &_twoguys {
+                &:before {
+                    top: -40px;
+                }
             }
         }
     }

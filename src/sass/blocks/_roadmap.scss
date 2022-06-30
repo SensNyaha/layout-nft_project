@@ -1,8 +1,8 @@
 .roadmap {
     margin-top: 300px;
-    
+    overflow-x: clip;
     &__title {
-        margin-top: 4px;
+        margin-top: 6px;
         &_mini {
             @include titleMini(pink);
             text-align: center;
@@ -105,6 +105,7 @@
             line-height: 16px;
             color: $fontColor;
             width: 325px;
+            z-index: 2;
         }
         &-title {
             font-family: 'Montserrat';
@@ -114,8 +115,10 @@
             color: $fontColor;
             width: 325px;
             margin-top: 9px;
+            z-index: 2;
         }
         &-text {
+            z-index: 2;
             width: 325px;
             margin-top: 23px;
             font-size: 18px;
