@@ -23,7 +23,7 @@
             padding-right: 20px;
         }
     }
-    .title{
+    .title {
         &_big {
             font-size: 48px;
         }
@@ -62,6 +62,14 @@
                     left: 670px;
                 }
             }
+        }
+    }
+    .team {
+        margin-top: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &__wrapper {
+            column-gap: 30px;
         }
     }
 }
@@ -184,7 +192,6 @@
     .roadmap {
         margin-top: 180px;
         &__title {
-
             &_mini {
                 font-size: 16px;
             }
@@ -219,6 +226,32 @@
                     width: 180px;
                     background-size: contain
                 }
+            }
+        }
+    }
+    .team {
+        margin-top: 110px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__title {
+            &_mini {
+                font-size: 16px;
+            }
+        }
+        &__wrapper {
+            margin-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 330px);
+            grid-auto-rows: 330px;
+            column-gap: unset;
+            row-gap: 40px;
+            justify-items: center;
+        }
+        &__employee {
+            img {
+                height: 250px;
+                width: 100%;
+                object-fit: contain;
             }
         }
     }
@@ -376,6 +409,16 @@
                     height: 140px;
                 }
 
+            }
+        }
+    }
+    .team {
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__title {
+            &_mini {
+                font-size: 14px;
             }
         }
     }
@@ -539,11 +582,53 @@
                 width: auto;
                 padding: 0 30px 0 30px;
             }
+            &_traced {
+                &:before {
+                    width: 90px;
+                }
+            }
             &_girl, &_sittinggirl, &_twoguys {
                 &:before {
                     top: -40px;
                 }
             }
+        }
+    }
+    .team {
+        margin-top: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &:before {
+            min-height: 100px;
+            top: -100px;
+        }
+        &:after {
+            min-height: 80px;
+            bottom: -80px;
+        }
+        &__title {
+            &_mini {
+                font-size: 12px;
+            }
+        }
+        &__wrapper {
+            margin-top: 30px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 250px);
+            grid-auto-rows: 250px;
+            row-gap: 20px;
+        }
+        &__employee {
+            img {
+                height: 180px;
+            }
+        }
+        &__vacancy {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        &__name {
+            font-size: 24px;
         }
     }
 }
