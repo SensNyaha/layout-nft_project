@@ -1,3 +1,14 @@
+@media (max-width: 1300px) {
+    .footer {
+        &__title {
+            &:before {
+                height: 150px;
+                top: -80px;
+                left: -105px;
+            }
+        }
+    }
+}
 @media (max-width: 1200px) {
     .container {
         width: 960px
@@ -83,6 +94,16 @@
         }
         &__wrapper {
             padding: 0 30px;
+        }
+    }
+    .footer {
+        &__title {
+            &:before {
+                left: -40px;
+            }
+        }
+        &__wrapper {
+            padding: 89px 20px 23px;
         }
     }
 }
@@ -281,6 +302,43 @@
             }
         }
     }
+    .footer {
+        margin-top: 120px;
+
+        &__wrapper {
+            padding-top: 50px;
+            &:before {
+                top: 120px;
+            }
+        }
+        &__title {
+            font-size: 46px;
+            &:before {
+                height: 120px;
+                top: -60px;
+                left: -65px;
+            }
+        }
+        &__links {
+            margin-top: 25px;
+        }
+        &__link {
+            font-size: 16px;
+        }
+        &__nav {
+            &-title {
+                font-size: 16px;
+                margin-top: 30px;
+            }
+            &-menu {
+                gap: 6px;
+            }
+            &-menuitem a{
+                font-size: 16px;
+                padding-left: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -463,6 +521,15 @@
         }
         &__answer {
             font-size: 18px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            grid-template-columns: auto 105px;
+            padding-right: 5px;
+        }
+        &__links {
+            gap: 20px;
         }
     }
 }
@@ -691,6 +758,37 @@
         }
         &__item {
             padding: 15px 0 13px;
+        }
+    }
+    .footer {
+        margin-top: 70px;
+        &__wrapper {
+            grid-template-columns: auto;
+            padding: 20px 0 15px;
+            &:before {
+                top: 65px;
+            }
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+            &:before {
+                height: 55px;
+                top: -45px;
+
+            }
+        }
+        &__links {
+            margin-top: 12px;
+            gap: 10px;
+        }
+        &__link {
+            a {
+                font-size: 14px;
+            }
+        }
+        &__nav {
+            display: none;
         }
     }
 }

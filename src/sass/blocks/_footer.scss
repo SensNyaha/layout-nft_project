@@ -26,7 +26,9 @@
         line-height: 58px;
         color: $fontColor;
         position: relative;
+        z-index: 2;
         &:before {
+            z-index: -1;
             position: absolute;
             width: 156px;
             height: 196px;
